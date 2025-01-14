@@ -14,7 +14,7 @@ function App() {
   return (
     <Router> 
       <Routes> 
-        <Route path="/" element={<Profile />} />
+        <Route path="/" element={<UserProtector><Profile /></UserProtector>} />
         <Route path="/register" element={<SignUpPage />} />
         <Route path="/login" element={<UserLogin />} />
 
